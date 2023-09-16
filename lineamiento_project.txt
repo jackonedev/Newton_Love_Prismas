@@ -1,0 +1,51 @@
+proyecto NLP (Newton Love Prismas)
+
+**APP 1**
+
+# Primero* Obtener un texto en determinado formato
+
+Ejemplo /fichero.txt:
+"""
+ESTE ES EL PRIMER FRAGMENTO A ANALIZAR
+
+Lorem impsum. Punto seguido.
+
+Este es el segundo parrafo. Punto seguido de punto aparte.
+Entonces seguimos dentro del segundo parrafo.
+
+Este es el tercer párrafo.
+
+AHORA ESTAMOS EN EL SEGUNDO FRAGMENTO
+
+El primer fragmento podría ser el train, y el segundo el test, o simplemente muestras que se quieran aislar.
+
+Segundo párrafo del segundo fragmento. Fin.
+"""
+
+
+# Segundo* procesar el texto en determinado formato:
+	- ~~typer~~
+		- path de ubicación del fichero.txt
+		- path del output del primer backup procesamiento de formato .txt 
+	- devolver el pre-procesamiento en formato accesible por un humano y en formato serializado
+		- procesamos cada fragmento y los serializamos bajo la etiqueta raw
+
+	- Al objeto procesado se le predice el SENTIMIENTO
+	- Al objeto procesado se le predice la EMOCION correspondiente
+		- predecimos cada fragmento y los serializamos bajo la etiqueta -emotion
+	- fin de la aplicación
+
+
+**APP 2**
+	- Una vez creado train y test set, hacemos análisis explotario (Olex, o manual, visual)
+	- se lo procesa con lemmatización
+	- se hace la nube de palabras
+	- se hace bag of words
+	- se entrena un modelo de arbol de decisión optimizado
+	- se evalúan las métricas contra el test set.
+
+
+**APP 3**
+	- feature: like a post (emoción binomial) (like o no like)
+	- objetivo: enhance the customer experience.
+	- medir reacciones de la gente
