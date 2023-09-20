@@ -1,4 +1,4 @@
-# Newton Love Prismas
+# Newton Loves Prismas
 
 ## Descripción
 
@@ -63,13 +63,7 @@ Cada fichero .pkl corresponde a un pandas.DataFrame con el procesamiento de cada
 ## Próximos pasos
 
 - Procesar el fichero corpus_df.pkl para:
-    - eliminar stopwords
-    - eliminar signos de puntuación
-    - lemmatizar
-    - wordcloud
     - tokenizar
     - vectorizar
-
-- Utilizar modelos pre-entrenados de NLP para predecir el sentimiento de cada fragmento y la emoción predominante.
-
-- Sacar conclusiones de lo que transmite, en este caso, las historias de Sherlock Holmes.
+    - NER: Named Entity Recognition
+  
