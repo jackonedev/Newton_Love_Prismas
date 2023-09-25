@@ -39,7 +39,7 @@ FRAGMENTO 3: ES OTRA LINEA COMPLETAMENTE EN MAYUSCULAS
 
 
 Este fragmento tiene un triple salto de linea
-que será corregidoc.
+que será corregido.
 
 Este es la segunda linea del fragmento 3.
 Por lo tanto es otra fila del DataFrame corpus
