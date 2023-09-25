@@ -142,6 +142,8 @@ def convert_fragments_into_corpus(fragments: pd.DataFrame, path_output: str, enc
     return: pd.DataFrame -> Corpus de cada fragmento
     """
 
+    crear_directorio(f"{path_output}/corpus", verbose=False)
+
     results = []
     for i, fragment in enumerate(fragments.columns):
         path_abs = path_output + f'/{fragment}.txt'
@@ -164,13 +166,15 @@ def convert_fragments_into_corpus(fragments: pd.DataFrame, path_output: str, enc
         corpus = list(filter(lambda x: x != '', corpus))
         results.append(corpus)
 
-        with open(path_output + f'/corpus_{i+1}.pkl', 'wb') as f:
+        with open(path_output + f'/corpus/corpus_{i+1}.pkl', 'wb') as f:
             pickle.dump(pd.Series(corpus).to_frame(), f)
 
     df = pd.DataFrame(results).T
     df = df.set_axis(fragments.columns, axis=1)
 
-    with open(path_output + f'/corpus_df.pkl', 'wb') as f:
+    
+
+    with open(path_output + f'/corpus/corpus_df.pkl', 'wb') as f:
         pickle.dump(pd.Series(corpus).to_frame(), f)
 
     return df
