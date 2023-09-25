@@ -7,6 +7,9 @@ import os
 
 pd.options.plotting.backend = "plotly"
 
+# path output
+path_out = pre.path_out
+
 # load DataFrame
 df = pre.corpus
 
