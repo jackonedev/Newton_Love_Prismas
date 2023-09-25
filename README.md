@@ -2,7 +2,7 @@
 
 ## Descripción
 
-El siguiente proyecto trata de procesar un fichero de texto plano (.txt) para generar un corpus de texto que pueda ser utilizado para entrenar un modelo de NLP (Natural Language Processing). El fichero de texto utilizado es la historia de Sherlock Holmes.
+El siguiente proyecto trata de procesar un fichero de texto plano (.txt) para generar un corpus de texto que pueda ser utilizado para implementar un modelo de NLP (Natural Language Processing) pre-entrenado. El fichero de texto utilizado es la historia de Sherlock Holmes.
 
 ## Objetivo
 
