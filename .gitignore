@@ -1,6 +1,7 @@
 # outputs
 /data/output/*
 lineamiento_project.txt
+visualization/*
 
 # personal files
 thread.py
