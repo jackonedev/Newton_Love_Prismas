@@ -2,6 +2,11 @@
 /data/output/*
 lineamiento_project.txt
 
+# personal files
+thread.py
+test.py
+*.ipynb
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -19,6 +24,7 @@ build/
 .idea/
 .vscode/
 *.pyc
+.vs
 
 # Environments
 env/
