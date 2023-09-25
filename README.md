@@ -62,7 +62,11 @@ En donde {fecha} corresponde a la fecha de ejecución del programa y {#} corresp
 
 Cada fichero .pkl corresponde a un pandas.DataFrame con el procesamiento de cada fragmento. El fichero corpus_df.pkl corresponde a la concatenación de todos los fragmentos.
 
-## Advertencia
+## Modo de ejecución
 
-El programa aún no está optimizado, y tal cual está diseñado ahora va a tardar varios días en procesar todo el texto.
-Se está trabajando en la optimización y control de flujo para que la ejecución pueda ser asistida por humanos.
+- Clonar el repositorio
+- Crear un entorno virtual con python 3.10
+- Instalar las dependencias con pip install -r requirements.txt
+- Ingresar al script main_03_model.py y ajustar las variables de control
+- Ejecutar el script main_03_model.py
+
