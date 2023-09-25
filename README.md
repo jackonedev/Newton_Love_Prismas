@@ -2,7 +2,17 @@
 
 ## Descripción
 
-Dado un fichero con extensión .txt, dentro del directorio /input el programa lee el fichero y lo procesa en función del siguiente formato (ejemplo):
+El siguiente proyecto trata de procesar un fichero de texto plano (.txt) para generar un corpus de texto que pueda ser utilizado para entrenar un modelo de NLP (Natural Language Processing). El fichero de texto utilizado es la historia de Sherlock Holmes.
+
+## Objetivo
+
+Implementar un transformer ya entrenado para traducir el texto. Implementar un algoritmo que consuma recursos de la GPU y utilice threading para optimizar el tiempo de procesamiento y los recursos computacionales.
+
+## Modelo utilizado
+
+https://huggingface.co/Helsinki-NLP/opus-mt-en-es
+
+## Ejemplo de procesamiento de texto:
 
 ```
 FRAGMENTO 1: ES UNA LINEA COMPLETAMENTE EN MAYUSCULAS
@@ -52,18 +62,7 @@ En donde {fecha} corresponde a la fecha de ejecución del programa y {#} corresp
 
 Cada fichero .pkl corresponde a un pandas.DataFrame con el procesamiento de cada fragmento. El fichero corpus_df.pkl corresponde a la concatenación de todos los fragmentos.
 
-## Ejecución
+## Advertencia
 
-- Clonar el repositorio
-- Crear un entorno virtual con python
-- Instalar las dependencias del fichero requirements.txt
-- Ejecutar el programa con el comando: python main-01_preprocessing.py
-- Revisar el directorio data/output
-
-## Próximos pasos
-
-- Procesar el fichero corpus_df.pkl para:
-    - tokenizar
-    - vectorizar
-    - NER: Named Entity Recognition
-  
+El programa aún no está optimizado, y tal cual está diseñado ahora va a tardar varios días en procesar todo el texto.
+Se está trabajando en la optimización y control de flujo para que la ejecución pueda ser asistida por humanos.
