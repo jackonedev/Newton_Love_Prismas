@@ -4,7 +4,6 @@ import sys
 import main_02_processing as pro
 from tqdm import tqdm
 import threading
-import pickle
 
 
 ## path output
@@ -13,7 +12,7 @@ path_out = pro.path_out
 
 ##  control variables
 fragment_to_translate = 0
-number_of_paragraphs = 50
+number_of_paragraphs = 10
 
 
 ## Load data
@@ -77,17 +76,3 @@ with open(save_path, "w") as f:
     
 print(f"Translated succesfully saved in {save_path}")
 
-
-
-# ### old
-# fragment_encoded = []
-# for i in range(df.shape[1]):
-#     batch = df.iloc[:, i].dropna().to_list()
-
-#     tokenized_text = tokenizer(
-#         batch, padding=True, truncation=True, return_tensors="pt")
-
-#     fragment_encoded.append(tokenized_text)
-
-# print("Tokenization Done!")
-# print(f"fragment_encoded: {len(fragment_encoded)}")

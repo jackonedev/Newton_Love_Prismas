@@ -49,6 +49,3 @@ if __name__ == '__main__':
 
     # save fig
     fig.write_html(f"./visualization/lengths_{parrafo +1}.html")
-
-    # print(df)
-    print(lengths_df)

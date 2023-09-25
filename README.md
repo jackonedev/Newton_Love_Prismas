@@ -70,3 +70,7 @@ Cada fichero .pkl corresponde a un pandas.DataFrame con el procesamiento de cada
 - Ingresar al script main_03_model.py y ajustar las variables de control
 - Ejecutar el script main_03_model.py
 
+
+## Feature Adicional
+
+Es posible visualizar el tamaño de cada párrafo, de cada fragmento, si se ejecuta el script main_02_processing.py. Este script genera un fichero .html por cada fragmento que puede ser visualizado en el navegador. El fichero .html se guarda en la carpeta /output. El gráfico de barras muestra el tamaño de cada párrafo en función de la cantidad de caracteres que contiene.
